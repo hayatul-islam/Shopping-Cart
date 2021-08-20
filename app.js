@@ -94,3 +94,19 @@ document.getElementById('caseMinusBtn').addEventListener('click', function () {
     updateNumber('caseInput', false, 'casePrice', perCase)
    
 })
+
+// remove item 
+document.getElementById('removeMobile').addEventListener('click', function(){
+    document.getElementById('mobileCart').style.display = 'none';
+})
+
+document.getElementById('removeCase').addEventListener('click', function(){
+    document.getElementById('caseCart').style.display = 'none';
+})
+
+// check out 
+document.getElementById('checkOut').addEventListener('click', function(){
+    const totalAmount = document.getElementById('total').innerHTML;
+    alert(`Successful Your Order
+    Total Amount: ` + totalAmount)
+})
